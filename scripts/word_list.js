@@ -1,0 +1,1 @@
+console.log(getFile('word_data.txt'))

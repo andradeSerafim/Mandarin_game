@@ -1,0 +1,31 @@
+/*  #faa41a
+    #a7a9ac
+    #d9d9d9
+    #ffbd59 */
+
+section {
+    background-color: #faa41a;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 70vh;
+}
+
+.box {
+    height: 4vmax;
+    width: 150px;
+    background-color: #d9d9d9;
+    font-size: 0;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+}
+
+button:disabled,
+button:disabled {
+    background-color: greenyellow;
+    color: green;
+    border-color: green;
+}
