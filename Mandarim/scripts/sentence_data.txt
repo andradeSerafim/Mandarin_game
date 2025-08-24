@@ -1,7 +1,0 @@
-"My mom is reading an English book.", 妈妈在看英文书
-"We eat rice.", 我们吃米饭
-"We are university students.", 我们是大学生
-"Computer Society.",计算机学会
-"Engineers don't attend history classes.", 工程师不上历史课
-"Apples are red.", 苹果是红色的
-"Programming languages are amazing.", 编程语言很棒
