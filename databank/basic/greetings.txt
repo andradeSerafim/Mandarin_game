@@ -1,0 +1,13 @@
+你好;          nǐ hǎo;                 Hello           
+再见;          zài jiàn;               Goodbye
+谢谢;          xièxie;                 Thank you
+多谢;          duō xiè;                Many thanks
+恭喜;          gōngxǐ;                 Congratulations
+请;            qǐng;                   Please
+不客气;        bù kèqi;                You are welcome
+对不起;        duìbuqǐ;                I am sorry
+你好吗;        nǐ hǎo ma;               How are you?
+你叫什么名字;   nǐ jiào shén me míng zì; What is your name?
+今天;          jīntiān;                Today
+昨天;          zuótiān;                Yesterday
+明天;          míngtiān;               Tomorrow

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #faa41a;
+        }
+
+        section {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            background-color: #d9d9d9;
+            width: 100%;
+        }
+
+        .newBox {
+            margin: 2vh;
+            padding: 3vh;
+            background-color: white;
+            border-radius: 5px;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Beginning</h1>
+    </header>
+    <section>
+        <div id="selectedSentence">Mandarin</div>
+        <div id="pinyinSentence">Pinyin</div>
+        <div id="englishSentence">Translation</div>
+    </section>
+    
+    <section>
+        <div id="hanzi-inserction"></div>
+        <div id="pinyin-inserction"></div>
+        <div id="hanzi-meaning"></div>
+    </section>
+    <script src="/scripts/greetings.js"></script>
+    <footer></footer>
+</body>
+</html>

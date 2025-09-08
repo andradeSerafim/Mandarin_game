@@ -1,0 +1,15 @@
+"How are you?", 你好吗
+"I am sorry", 对不起
+"What is your name?", 你叫什么名字
+"We eat rice.", 我们吃米饭
+"Apples are red.", 苹果是红色的
+"I do not have money.", 我没有钱
+"My mom is reading an English book.", 妈妈在看英文书
+"We are all university students.", 我们都是大学生
+"Today is Wednesday.", 今天是星期三
+"I am not a lawyer.", 我不是律师
+"I speak at bit of Mandarim.", 我会说一点汉语
+"Your computer is old or new?", 您的计算机是旧的还是新的。
+"Computer Society.",计算机学会
+"Engineers don't attend history classes.", 工程师不上历史课
+"Programming languages are amazing.", 编程语言很棒

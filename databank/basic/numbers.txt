@@ -1,0 +1,83 @@
+0, 零, Zero
+1, 一, One  
+2, 二, Two  
+3, 三, Three  
+4, 四, Four  
+5, 五, Five  
+6, 六, Six  
+7, 七, Seven  
+8, 八, Eight  
+9, 九, Nine  
+10, 十, Ten  
+11, 十一, Eleven  
+12, 十二, Twelve  
+13, 十三, Thirteen
+14, 十四, Fourteen
+15, 十五, Fifteen
+16, 十六, Sixteen
+17, 十七, Seventeen
+18, 十八, Eighteen
+19, 十九, Nineteen
+20, 二十, Twenty
+21, 二十一, Twenty-one  
+22, 二十二, Twenty-two  
+23, 二十三, Twenty-three  
+24, 二十四, Twenty-four
+25, 二十五, Twenty-five  
+30, 三十, Thirty  
+31, 三十一, Thirty-one  
+37, 三十七, Thirty-seven  
+44, 四十, Forty  
+44, 四十四, Forty-four  
+48, 四十八, Forty-eight  
+50, 五十, Fifty  
+53, 五十三, Fifty-three  
+56, 五十六, Fifty-six  
+60, 六十, Sixty  
+69, 六十九, Sixty-nine  
+70, 七十, Seventy  
+77, 七十七, Seventy-seven  
+78, 七十八, Seventy-eight  
+80, 八十, Eighty  
+85, 八十五, Eighty-five  
+90, 九十, Ninety  
+99, 九十九, Ninety-nine  
+100, 百, One hundred  
+101, 一百一, One hundred three
+103, 一百三, One hundred three
+118, 一百一十八, One hundred eighteen  
+219, 二百一十九, Two hundred nineteen
+342, 三百四十二, Three hundred forty-two 
+384, 三百八十四, Three hundred eighty
+470, 四百七十, Four hundred seventy
+526, 五百二十六, Five hundred twenty-six 
+589, 五百八十九, Five hundred eighty-nine  
+764, 七百六十四, Seven hundred sixty-four  
+999, 九百九十九, Nine hundred ninety-nine
+1000, 千, One thousand  
+1001, 一千零一, One thousand and one  
+1007, 一千零七, One thousand and seven 
+1017, 一千零一十七, One thousand and seventeen 
+1021, 一千零二十一, One thousand twenty-one  
+1457, 一千四百五十七, One thousand four hundred fifty-seven  
+1783, 一千七百八十三, One thousand seven hundred eighty-three  
+2210, 二千二百一十, Two thousand two hundred ten  
+2025, 二千零二十五, Two thousand and twenty-five
+2678, 二千六百七十八, Two thousand six hundred seventy-eight  
+2994, 二千九百九十四, Two thousand nine hundred ninety-four  
+3746, 三千七百四十六, Three thousand and seven hundred fourty-six
+4099, 四千零九十九, Four thousand and ninety-nine
+4999, 四千九百九十九, Four thousand and nine hundred ninety-nine
+5903, 五千九百零三, Five thousand nine hundred and three
+8513, 八千五百一十三, Eight thousand five hundred and thirteen
+9999, 九千九百九十九, Nine thousand nine hundred ninety-nine
+10000, 万, Ten thousand  
+13527, 一万三千五百二十七, Thirteen thousand five hundred twenty-seven  
+20068, 二万零六十八, Twenty thousand sixty-eight  
+20075, 二万零七十五, Twenty thousand seventy-five  
+20091, 二万零九十一, Twenty thousand ninety-one 
+100000, 十万, One hundred thousand
+100001, 十万零一, One hundred thousand and one
+500000, 五十万, Five hundred thousand
+100050, 十万五十, One hundred thousand and fifty
+1000000, 一百万, One million
