@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google" content="notranslate">
+    <link rel="stylesheet" href="styles/styles_numbers.css">
+    <title>句子</title>
+    <!-- <link rel="stylesheet" href="styles/reset.css"> -->
+</head>
+<body>
+    <header><h1>数字 (Numbers)</h1></header>
+    <button id="continuingGame">Verify answer</button>
+    <button id="erasingField" onclick="erasingField()">Erasing field</button>
+    <section id="numbersSection" class="numbersSection">
+        <div id="left-side" class="left-side"></div>
+        <div id="centralField" class="centralField">
+            <div id="centralField__number" class="centralField__number"></div>
+            <div id="centralField__name" class="centralField__name"></div>
+            <textarea id="centralField__answer" class="centralField__answer greenCorrect"></textarea>
+            <section id="learningSection" class="learningSection">
+                <div id="learningSection__counting" class="learningSection__counting"></div>
+                <div id="learningSection__explanation" class="learningSection__explanation"></div>
+            </section>
+        </div>
+        <div id="right-side" class="right-side"></div>
+    </section>
+    <footer class="footer">
+        <button onclick="goToMenu()">Retun to menu</button>
+    </footer>
+    <script src="/scripts/numberSelection.js" type="module"></script>
+    <script>
+        function goToMenu() {
+            window.location.href = src='./main.html';
+        };
+    </script>
+</body>
+</html>

@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google" content="notranslate">
     <title>Main page</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/styles_main.css">
 </head>
 <body>
-    <header class="header"></header>
+    <header class="header"><h1>你好</h1></header>
     <section>
-        <h1>你好</h1>
-        <button id="matchigG" onclick="matchigGame()">选择</button>
-        <button id="matchigG" onclick="memoryGame()">记忆游戏</button>
-        <button id="matchigG" onclick="sentenceGame()">句子</button>
+        <button id="buttonGame" class="buttonGame" onclick="matchigGame()">选择 (Matching game)</button>
+        <button id="buttonGame" class="buttonGame" onclick="memoryGame()">记忆游戏 (Memory game)</button>
+        <button id="buttonGame" class="buttonGame" onclick="sentenceGame()">句子 (Sentences)</button>
+        <button id="buttonGame" class="buttonGame" onclick="numbersGame()">数字 (Numbers)</button>
     </section>
     <footer class="footer"></footer>
     <script>
@@ -27,6 +28,10 @@
 
         function memoryGame() {
             window.location.href = src='./memory.html';
+        }
+        
+        function numbersGame() {
+            window.location.href = src='./numbers_typing.html';
         }
     </script>
 </body>

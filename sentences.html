@@ -4,17 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google" content="notranslate">
+    <link rel="stylesheet" href="styles/styles_sentences.css">
     <title>句子</title>
+    <!-- <link rel="stylesheet" href="styles/reset.css"> -->
 </head>
 <body>
-    <header><h1>句子</h1></header>
+    <header><h1>句子 (Sentences game)</h1></header>
     <section id="setenceSection">
-        <p id="sentenceNow"></p>
-        <textarea name="typeArea" id="typeArea"></textarea>
+        <p id="sentenceNow" class="sentenceNow"></p>
+        <textarea name="typeArea" id="typeArea" class="typeArea" rows="5" cols="40"></textarea>
+        <div id="setenceSection__buttons" class="setenceSection__buttons"></div>
+        <button id="analisingButton" class="analisingButton" onclick="verifyAnswer()">Send</button>
     </section>
-    <button id="analisingButton" onclick="verifyAnswer()">Send</button>
     <footer class="footer">
-        <button onclick="goToMenu()">Retun to menu</button>
+        <button onclick="goToMenu()" id="returnButton" class="returnButton" >Retun to menu</button>
     </footer>
     <script src="/scripts/sentenceSelection.js"></script>
     <script>
