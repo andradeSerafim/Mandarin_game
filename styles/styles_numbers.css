@@ -1,0 +1,124 @@
+/*  #faa41a
+    #a7a9ac
+    #d9d9d9
+    #ffbd59 */
+
+.numbersSection {
+    background-color: #faa41a;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+.left-side,
+.right-side {
+    background-color: white;
+    border-radius: 5px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.numberNumericalButton {
+    background-color: white;
+    margin: 5px;
+    border-radius: 5px;
+    padding: 1rem;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.hanziNumericalButton {
+    background-color: #d9d9d9;
+    margin: 2px;
+    border-radius: 5px;
+    border: none;
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.hanziNumericalButton:hover {
+    background-color: #a7a9ac;
+    color: white;
+    transition: 0.2s;
+}
+
+.hanziNumericalButton:active {
+    background-color: #ffbd59;
+    color: white;
+}
+
+.nameNumericalButton {
+    background-color: white;
+    margin: 2px;
+    border-radius: 5px;
+    padding: 0.2rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.centralField {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.centralField__answer {
+    border-radius: 5px;
+    margin: 2px;
+    resize: none;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.learningSection__counting,
+.learningSection__explanation {
+    background-color: white;
+    border-radius: 5px;
+    resize: none;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 5px;
+}
+
+.greenCorrectAnimation {
+    animation: 0.2s linear greenCorrect;
+}
+
+@keyframes greenCorrect {
+    50% {
+        background-color: greenyellow;
+        border-color: darkgreen;
+        color: darkgreen;
+    }
+}
+
+.redWrongAnimation {
+    animation: 0.4s linear redWrong;
+}
+
+@keyframes redWrong {
+    50% {
+        background-color: lightpink;
+        border-color: darkred;
+        color: darkred;
+    }
+}
+
+@media (max-width: 560px) {
+    .centralField {
+        align-items: center;
+    }
+    
+    .learningSection__counting,
+    .learningSection__explanation {
+        font-size: 1rem;
+    }
+
+    .centralField__answer {
+        width: 90%;
+    }
+}

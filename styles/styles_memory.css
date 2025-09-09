@@ -9,13 +9,15 @@ section {
     flex-direction: row;
     justify-content: center;
     height: 70vh;
+    padding: 5px;
 }
 
 .box {
     height: 4vmax;
-    width: 150px;
+    width: 8rem;
     background-color: #d9d9d9;
-    font-size: 0;
+    border-radius: 5px;
+    font-size: 0; /*Keeping text invisible.*/
 }
 
 div {
@@ -23,9 +25,25 @@ div {
     flex-direction: column;
 }
 
-button:disabled,
 button:disabled {
     background-color: greenyellow;
     color: green;
     border-color: green;
 }
+
+.returnButton {
+    font-size: 3vh;
+    background-color: #d9d9d9;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: black;
+    margin: 10px;
+}
+
+.returnButton:hover {
+    background-color: #a7a9ac;
+    color: white;}
+
+/* button:hover {
+    background-color: #a7a9ac;
+} */
