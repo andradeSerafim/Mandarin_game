@@ -18,7 +18,7 @@ const insertingSentence = document.getElementById("sentenceNow");
 
 // document.addEventListener('DOMContentLoaded', () => {
 async function main() {
-    const response = await fetch('scripts/sentence_data.txt');
+    const response = await fetch('databank/sentence_data.txt');
     const text = await response.text();
     const lines = text.split('\n');
     // console.log("lines", lines);  //debug
@@ -47,7 +47,7 @@ async function main() {
         hanziButton.classList.add("hanziButton");
         hanziButton.textContent = hanziList[i];
         // console.log(hanziButton);  //debug
-        document.getElementById("setenceSection").appendChild(hanziButton);
+        document.getElementById("setenceSection__buttons").appendChild(hanziButton);
     }
 
     const buttonArray = Object.values(document.getElementsByClassName("hanziButton"))
@@ -58,31 +58,47 @@ async function main() {
         element.addEventListener('click', (event) => {
             // console.log('event',event.target.innerText);  //debug
             const typeArea = document.getElementById("typeArea");
-            typeArea.value = typeArea.value + event.target.innerText;
+            // typeArea.value += event.target.innerText;
+
+            const startCursor =  typeArea.selectionStart
+            typeArea.value = typeArea.value.substring(0, startCursor) +  event.target.innerText + typeArea.value.substring(typeArea.selectionEnd);
+            typeArea.selectionStart = typeArea.selectionEnd = startCursor + 1;
+            console.log("startCursor", startCursor)
+            console.log("typeArea.selectionEnd", typeArea.selectionEnd)
+            typeArea.focus();
         })
     });
     
     console.log('typeArea.innerText',typeArea.innerText);
     
-    verifyAnswer(hanzi)
+    verifyAnswer(hanzi);
 }
 
 function verifyAnswer(hanzi) {
     document.querySelector('button[id="analisingButton"]').addEventListener('click', () => {
         const typedAnswer = document.querySelector('textarea[id="typeArea"]').value.trim();
+        console.log("typedAnswer", typedAnswer)  //debug
+        console.log("hanzi", hanzi)  //debug
         const verifying = typedAnswer.trim() == hanzi.trim();
         // console.log("hanzi_function", hanzi)  //debug
-        // console.log("typedAnswer", typedAnswer)  //debug
         // console.log("length_hanzi_function", hanzi.trim().length)  //debug
         // console.log("length_typedAnswer", typedAnswer.length)  //debug
         // console.log("typeof_hanzi_function", typeof(hanzi))  //debug
         // console.log("typeof_typedAnswer", typeof(typedAnswer))  //debug
         if (verifying) {
-            alert("Correct answer.")
+            // alert("Correct answer.")
+            document.getElementById("typeArea").style.borderColor = 'green';
+            document.getElementById("typeArea").style.backgroundColor = 'greenyellow';
+            document.getElementById("typeArea").style.color = 'green';
+            document.getElementById("typeArea").style.borderWidth = '3px'
         } else {
-            alert("Wrong answer.")
+            // alert("Wrong answer.")
+            document.getElementById("typeArea").style.borderColor = 'darkred';
+            document.getElementById("typeArea").style.backgroundColor = 'lightpink';
+            document.getElementById("typeArea").style.color = 'darkred';
+            document.getElementById("typeArea").style.borderWidth = '3px'
         }
-    })
+    }) //{once:true}
 }
 
 document.addEventListener('DOMContentLoaded', main);

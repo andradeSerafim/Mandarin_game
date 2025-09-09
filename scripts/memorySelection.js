@@ -1,3 +1,5 @@
+let fontSizeOnClick = '100%'
+
 function memorySelectionFunction() {
    let words = document.getElementsByClassName("box");
 //    console.log(words);
@@ -15,7 +17,7 @@ function memorySelectionFunction() {
             //console.log("oneClick:",oneClick);
             //console.log("oneClick.dataset.id:",oneClick.dataset.id);
             oneClick.style.backgroundColor = '#ffffa2ff';
-            oneClick.style.fontSize = '3vh';
+            oneClick.style.fontSize = fontSizeOnClick;
          } else {
             oneClick.style.backgroundColor = '#d9d9d9';
             const equalDataId = selectedButtons[0].dataset.id == selectedButtons[1].dataset.id;
@@ -23,7 +25,7 @@ function memorySelectionFunction() {
             if (equalDataId && differentNames) {
                selectedButtons[0].style.backgroundColor = 'greenyellow';
                selectedButtons[1].style.backgroundColor = 'greenyellow';
-               selectedButtons[1].style.fontSize = '3vh';
+               selectedButtons[1].style.fontSize = fontSizeOnClick;
                selectedButtons[0].disabled = true;
                selectedButtons[1].disabled = true;
                selectedButtons = [];
@@ -35,7 +37,7 @@ function memorySelectionFunction() {
             } else {
                selectedButtons[0].style.backgroundColor = 'lightpink';
                selectedButtons[1].style.backgroundColor = 'lightpink';
-               selectedButtons[1].style.fontSize = '3vh';
+               selectedButtons[1].style.fontSize = fontSizeOnClick;
                setTimeout( () => {
                   selectedButtons[0].style.backgroundColor = '#d9d9d9';
                   selectedButtons[1].style.backgroundColor = '#d9d9d9';
@@ -45,8 +47,15 @@ function memorySelectionFunction() {
                }, 500);
             }
          }
-         console.log(selectedButtons);
-         console.log("selectedButtons.length:",selectedButtons.length);
+         // console.log(selectedButtons);
+         // console.log("selectedButtons.length:",selectedButtons.length);
+      })
+
+      element.addEventListener("mouseover", (event) => {
+         // console.log(event.target.style)
+         if (event.target.backgroundColor != "greenyellow") {
+            event.target.style.backgroundColo = '#a7a9ac';
+         }
       })
    });
 } 

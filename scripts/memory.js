@@ -27,7 +27,7 @@ function randomLines(array) {
 }
 
 async function main() {
-    const response = await fetch('scripts/word_data.txt');
+    const response = await fetch('databank/word_data.txt');
     //console.log("response",response);  //debug
     const text = await response.text();
     //console.log("text",text);  //debug

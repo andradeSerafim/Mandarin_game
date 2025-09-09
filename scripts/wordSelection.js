@@ -7,6 +7,7 @@ function wordSelectionFunction() {
    let wordsArray = Object.values(words);
    //console.log(typeof(wordsArray))
    wordsArray.forEach((element) => {
+      console.log("element", element);
       element.addEventListener("click", (event) => {
          let oneClick = event.target;
          selectedButtons.push(oneClick)
@@ -41,6 +42,15 @@ function wordSelectionFunction() {
          }
          //console.log(selectedButtons);
          //console.log("selectedButtons.length:",selectedButtons.length);
+      });
+
+      element.addEventListener("mouseover", (event) => {
+         // console.log(event.target.style)
+         if (event.target.backgroundColor != "greenyellow") {
+            event.target.style.backgroundColo = '#a7a9ac';
+         }
       })
    });
 } 
+
+

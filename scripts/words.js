@@ -27,12 +27,12 @@ function randomLines(array) {
 }
 
 async function main() {
-    const response = await fetch('scripts/word_data.txt');
+    const response = await fetch('databank/word_data.txt');
     //console.log("response",response);  //debug
     const text = await response.text();
     //console.log("text",text);  //debug
     const lines = text.split('\n');
-    console.log("lines",lines);  //debug
+    // console.log("lines",lines);  //debug
     let wordData = [];
     let selectedLines = [];
     let randomSelectedLines = randomLines(lines);
@@ -44,7 +44,7 @@ async function main() {
     console.log("selectedLines",selectedLines)
     selectedLines.forEach((line) => {
         let [hanzi, english] = line.split(',');
-        [hanzi, english] = [hanzi.trim().replace('"', ''), english.trim()];
+        [hanzi, english] = [hanzi.trim(), english.trim()];
         // console.log("[hanzi, english]:", [hanzi, english]);
         wordData.push([hanzi, english]);
     });
