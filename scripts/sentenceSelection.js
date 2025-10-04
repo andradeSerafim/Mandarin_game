@@ -1,3 +1,4 @@
+
 // console.log("sentenceData",sentenceData[1])
 
 function fischerYatesShuffle(array) {
@@ -102,3 +103,4 @@ function verifyAnswer(hanzi) {
 }
 
 document.addEventListener('DOMContentLoaded', main);
+

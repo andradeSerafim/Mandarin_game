@@ -99,3 +99,4 @@ document.addEventListener('DOMContentLoaded', main);
 // wordData = Object.values(getFile('scripts/word_data.txt'));
 // const wordData = getFile('scripts/word_data.txt');
 
+

@@ -44,4 +44,5 @@ function teste() {
 }
 
 document.addEventListener('DOMContentLoaded', main);
+
 teste();
