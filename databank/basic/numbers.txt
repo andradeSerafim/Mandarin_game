@@ -26,8 +26,9 @@
 25, 二十五, Twenty-five  
 30, 三十, Thirty  
 31, 三十一, Thirty-one  
+34, 三十四, Thirty-four 
 37, 三十七, Thirty-seven  
-44, 四十, Forty  
+40, 四十, Forty  
 44, 四十四, Forty-four  
 48, 四十八, Forty-eight  
 50, 五十, Fifty  

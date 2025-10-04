@@ -30,9 +30,9 @@ function givingExplanation() {
         explanationField.innerText = '二十 is 20 because 2 × 10 = 20. \nDo not confuse with 十二, \nwhich is 12.';
     } else if (NumHere == 21) {
         explanationField.innerText = '二十一 is 21 because 2 × 10 + 1 = \n21. Numbers on the left of 十 \nare multiplied by 10.';
-    } else if ((NumHere > 22) && (NumHere < 30)) {
+    } else if ((NumHere >= 22) && (NumHere < 30)) {
         explanationField.innerText = 'Continue selecting \nthree hanzi numbers buttons \nuntil 30.';
-    } else if ((NumHere > 31) && (NumHere < 100)) {
+    } else if ((NumHere >= 31) && (NumHere < 100)) {
         explanationField.innerText = 'Continue selecting \nthree hanzi numbers buttons \nuntil 100.';
     } else if (NumHere == 100) {
         setTimeout(() => {
