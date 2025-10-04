@@ -39,9 +39,9 @@ function givingExplanation() {
             explanationField.innerText = 'Type the hanzi 百, \nwhich means 100.';
         }, secondsWaiting)
     } else if (NumHere == 101) {
-        explanationField.innerText = 'Type 一百一, hundreds need its \nquantity detailed expressed from now.';
+        explanationField.innerText = 'Type 一百一, hundreds need their \nquantity detailed from now.';
     } else if ((NumHere >= 110) || (NumHere <= 119)) {
-        explanationField.innerText = 'Except between 010 and 019, \nit is necessary to type "一十", \nas 118.';
+        explanationField.innerText = 'Except between 010 and 019, \nit is necessary to type "一十",  \nfor example, "一百一十九" means 119.';
     } else if ((NumHere >= 120) || (NumHere <= 999)) {
         explanationField.innerText = '十 and 百 are powers of 10, \ntreated as tens and hundreds \nrespectively for their hanzi on left.';
     } else if (NumHere == 1000) {
@@ -54,6 +54,8 @@ function givingExplanation() {
         setTimeout(() => {
             explanationField.innerText = 'Type only the new hanzi on the right';
         }, secondsWaiting * 2/9)
+    } else {
+        explanationField.innerText = 'Continue typing until the end.'
     }
 }
 
