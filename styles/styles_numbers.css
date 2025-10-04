@@ -1,7 +1,7 @@
 @import "/styles/base.css";
 
 .numbersSection {
-    background-color: #faa41a;
+    background-color: var(--main-orange);
     border-radius: 5px;
     display: flex;
     flex-direction: row;
