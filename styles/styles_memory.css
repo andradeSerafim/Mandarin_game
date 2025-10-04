@@ -1,3 +1,5 @@
+@import "./styles/base.css";
+
 section {
     background-color: var(--main-orange);
     display: flex;
