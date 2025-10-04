@@ -1,10 +1,5 @@
-/*  #faa41a
-    #a7a9ac
-    #d9d9d9
-    #ffbd59 */
-
 section {
-    background-color: #faa41a;
+    background-color: var(--main-orange);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -15,7 +10,7 @@ section {
 .box {
     height: 4vmax;
     width: 8rem;
-    background-color: #d9d9d9;
+    background-color: var(--light-gray);
     border-radius: 5px;
     font-size: 0; /*Keeping text invisible.*/
 }
@@ -33,7 +28,7 @@ button:disabled {
 
 .returnButton {
     font-size: 3vh;
-    background-color: #d9d9d9;
+    background-color: var(--light-gray);
     border-radius: 5px;
     border-width: 1px;
     border-color: black;
@@ -41,9 +36,7 @@ button:disabled {
 }
 
 .returnButton:hover {
-    background-color: #a7a9ac;
-    color: white;}
+    background-color: var(--darker-gray);
+    color: white;
+}
 
-/* button:hover {
-    background-color: #a7a9ac;
-} */

@@ -1,7 +1,4 @@
-/*  #faa41a
-    #a7a9ac
-    #d9d9d9
-    #ffbd59 */
+@import "./styles/base.css";
 
 h1 {
     font-size: 8vh;
@@ -9,7 +6,7 @@ h1 {
 }
 
 section {
-    background-color: #faa41a;
+    background-color: var(--main-orange);
     margin: 1em;
     padding: 5px;
     height: 80vh;
@@ -18,7 +15,7 @@ section {
 
 .buttonGame {
     font-size: 3vh;
-    background-color: #d9d9d9;
+    background-color: var(--light-gray);
     border-radius: 5px;
     border-width: 1px;
     border-color: black;
@@ -26,6 +23,6 @@ section {
 }
 
 .buttonGame:hover {
-    background-color: #a7a9ac;
+    background-color:  var(--darker-gray);
     color: white;
 }
