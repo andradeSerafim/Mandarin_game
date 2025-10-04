@@ -10,8 +10,8 @@
 </head>
 <body>
     <header><h1>数字 (Numbers)</h1></header>
-    <button id="continuingGame">Verify answer</button>
-    <button id="erasingField" onclick="erasingField()">Erasing field</button>
+    <button id="continuingGame" class="actButton">Verify answer</button>
+    <button id="erasingField" onclick="erasingField()" class="actButton">Erasing field</button>
     <section id="numbersSection" class="numbersSection">
         <div id="left-side" class="left-side"></div>
         <div id="centralField" class="centralField">
@@ -26,7 +26,7 @@
         <div id="right-side" class="right-side"></div>
     </section>
     <footer class="footer">
-        <button onclick="goToMenu()">Retun to menu</button>
+        <button onclick="goToMenu()" class="returnButton">Retun to menu</button>
     </footer>
     <script src="./scripts/numberSelection.js" type="module"></script>
     <script>

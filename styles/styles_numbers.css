@@ -122,3 +122,13 @@
         width: 90%;
     }
 }
+
+.returnButton,
+.actButton {
+    font-size: 3vh;
+    background-color: var(--light-gray);
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: black;
+    margin: 10px;
+}

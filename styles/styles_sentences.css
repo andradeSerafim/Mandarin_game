@@ -1,11 +1,7 @@
-/*  #faa41a
-    #a7a9ac
-    #d9d9d9
-    #ffbd59 */
+@import "./styles/base.css";
 
-/* .setenceSection__buttons {} */
 section {
-    background-color: #faa41a;
+    background-color: var(--main-orange);
     border-radius: 10px;
     padding: 10px;
     height: 70vh;
@@ -31,7 +27,7 @@ section {
 }
 
 .typeArea:focus {
-    border-color: #ffbd59;
+    border-color: var(--sec-orange);
 }
 
 /* .typeArea:rightAnswer {
@@ -54,13 +50,13 @@ section {
 }
 
 .hanziButton:hover {
-    background-color: #d9d9d9
+    background-color: var(--light-gray);
 }
 
 .analisingButton,
 .returnButton {
     font-size: 3vh;
-    background-color: #d9d9d9;
+    background-color: var(--light-gray);
     border-radius: 5px;
     border-width: 1px;
     border-color: black;
@@ -69,6 +65,6 @@ section {
 
 .analisingButton:hover,
 .returnButton:hover {
-    background-color: #a7a9ac;
+    background-color: var(--darker-gray);
     color: white;
 }
